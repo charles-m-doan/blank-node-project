@@ -1,0 +1,28 @@
+{
+	"name": "web-palette-mapper",
+	"version": "1.0.0",
+	"description": "This is a simple javascript project that creates a utility for mapping a color palette to css variables in a website.  The user simply needs to include the script in the body of the page, and specify some base parameters in the script for color preferences.  The script will then create css variables for the base colors, as well as various tints and shades with a standardized naming convention.  For implementation details, see the comments on the parameters in the script itself.",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest ./test --colors --coverage --watch",
+		"dev": "parcel ./src/index.html",
+		"build": "parcel build ./src/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charles-m-doan/web-palette-mapper.git"
+	},
+	"author": "Charles Matthew Doan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/charles-m-doan/web-palette-mapper/issues"
+	},
+	"homepage": "https://github.com/charles-m-doan/web-palette-mapper#readme",
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"babel-jest": "^24.8.0",
+		"jest": "^24.8.0",
+		"parcel-bundler": "^1.12.3"
+	}
+}
