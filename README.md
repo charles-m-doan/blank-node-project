@@ -36,9 +36,14 @@ npm install --save-dev jest
 
 ## 5. Install Babel (needed for using "imports" in tests)
 
-#### In Git Bash enter: "npm install --save-dev babel-jest @babel/core @babel/preset-env"
+#### In Git Bash enter:
 
-Create a file in the project root *(next to package.json)* named **"babel.config.js"** and add the following lines:
+```
+npm install --save-dev babel-jest @babel/core @babel/preset-env
+```
+
+Create a file in the project root *(same level as "package.json")* named **"babel.config.js"** and add the following lines:
+
 ```javascript
 module.exports = {
 	presets: [
@@ -53,7 +58,6 @@ module.exports = {
 	]
 };
 ```
-
 
 ## 6. Install Parcel
 #### In Git Bash enter:
