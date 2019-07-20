@@ -125,12 +125,13 @@ For the "test" script, you can leave *test directory* blank and jest will simply
 + Create a */test* folder in **root**
 
 ### That's it! You should be good to go.
-If you've followed the instructions to this point, a view of your project root and config files in VSCode should look similar to the following...
+If you've followed the instructions to this point, a view of your project root and config files in VSCode should look similar to the following:
 
 ![alt text](https://github.com/charles-m-doan/blank-node-project/blob/master/src/images/Example_01.jpg "Example 01")
 
+And then if you add a simple hello-world script and a test script, run a jest test and a parcel host, you should see something like this:
 
-
+![alt text](https://github.com/charles-m-doan/blank-node-project/raw/master/src/images/Example_02.jpg "Example 02")
 
 ## 9. Notes on Running in Gitbash
 
