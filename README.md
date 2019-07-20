@@ -137,12 +137,12 @@ And then if you add a simple hello-world script and a test script, run a jest te
 
 When you run jest and parcel you'll notice that this creates ".cache", "coverage", and "dist" folders in your project root.  We don't want these pushed with our projects, which is why we list them in our .gitignore file.
 
-#### To run your jest tests use:
+#### To run your jest tests enter:
 ```
 npm run test
 ```
 
-#### To run your website with parcel use:
+#### To host your website with parcel enter:
 
 ```
 npm run dev
@@ -153,6 +153,13 @@ npm run dev
 ```
 CTRL + C.
 ```
+
+#### Lastly, if you're creating an initial build from an existing cloned project (assuming it has its files configured properly), then simply enter:
+
+```
+npm install
+```
+Feel free to test this by cloning this hello-world project and using *npm install*.
 
 ## 10. Additional Notes
 
