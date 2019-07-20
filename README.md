@@ -1,5 +1,5 @@
 # Setting up a new Node project in Git Bash using npm, Jest, Babel, and Parcel.
-(note: "npm" is the built-in Node.js package manager. You could use yarn instead, but the process will be slightly different.)
+*Note: **"npm"** is the built-in Node.js package manager. You could use **yarn** instead, but the process will be slightly different.*
 
 ### If you haven't already, install Node.js: "https://nodejs.org/en/"
 
