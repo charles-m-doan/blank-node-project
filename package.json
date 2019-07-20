@@ -1,8 +1,18 @@
 {
-	"name": "web-palette-mapper",
+	"name": "blank-node-project",
 	"version": "1.0.0",
-	"description": "This is a simple javascript project that creates a utility for mapping a color palette to css variables in a website.  The user simply needs to include the script in the body of the page, and specify some base parameters in the script for color preferences.  The script will then create css variables for the base colors, as well as various tints and shades with a standardized naming convention.  For implementation details, see the comments on the parameters in the script itself.",
+	"description": "A simple Hello-World project to demonstrate creating an initial build for Node.js",
 	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"babel-jest": "^24.8.0",
+		"jest": "^24.8.0",
+		"parcel-bundler": "^1.12.3"
+	},
 	"scripts": {
 		"test": "jest ./test --colors --coverage --watch",
 		"dev": "parcel ./src/index.html",
@@ -10,19 +20,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/charles-m-doan/web-palette-mapper.git"
+		"url": "git+https://github.com/charles-m-doan/blank-node-project.git"
 	},
 	"author": "Charles Matthew Doan",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/charles-m-doan/web-palette-mapper/issues"
+		"url": "https://github.com/charles-m-doan/blank-node-project/issues"
 	},
-	"homepage": "https://github.com/charles-m-doan/web-palette-mapper#readme",
-	"devDependencies": {
-		"@babel/core": "^7.5.5",
-		"@babel/preset-env": "^7.5.5",
-		"babel-jest": "^24.8.0",
-		"jest": "^24.8.0",
-		"parcel-bundler": "^1.12.3"
-	}
+	"homepage": "https://github.com/charles-m-doan/blank-node-project#readme"
 }
