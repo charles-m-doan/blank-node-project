@@ -104,7 +104,7 @@ If the *"scripts":* section isn't already present, add it and include the follow
 
 ### *Notes on directory structure*
 
-For the "test" script, you can leave *test directory* blank and jest will simply search all directories for test files starting from the root.  However, for efficiency and organization's sake it probably makes the most sense to have a **"/test"** directory in the root that contains your .test.js files.  Here is how I recommend configuring this section.
+For the "test" script, you can leave *test directory* blank and jest will simply search all directories for test files starting from the root.  However, for efficiency and organization's sake it probably makes the most sense to have a **"/test"** directory in the root that contains your .test.js files.  Here is how I configure mine.
 
 ```
 "scripts": {
@@ -115,9 +115,21 @@ For the "test" script, you can leave *test directory* blank and jest will simply
 ```
 
 **"./test"** contains all test files
-**"./src"** contains all production code and resources. For instance, it will have sub-folders such as "/js", "/css", "/prototypes", "/images", and of course the "index.html" file. (See attached image for an example of a fully initialized "hello-world" project.)
+**"./src"** contains all production code and resources. For instance, it will have sub-folders such as "/js", "/css", "/prototypes", "/images", and of course the "index.html" file. (See next section for an example.)
 
-## 8. Notes on Running in Gitbash
+## 8. Recommended Directory Structure and Files
+
++ Create a */src* folder in **root**
++ Add an *index.html* file in **/src**
++ Create a */js* folder in **/src**
++ Add an *index.js* file in **/js**
++ Create a */test* folder in **root**
+
+### That's it! You should be good to go.
+
+## 9. Notes on Running in Gitbash
+
+When you run jest and parcel you'll notice that this creates ".cache", "coverage", and "dist" folders in your project root.  We don't want these pushed with our projects, which is why we list them in our .gitignore file.
 
 #### To run your jest tests use:
 ```
@@ -136,7 +148,7 @@ npm run dev
 CTRL + C.
 ```
 
-## 9. Additional Notes
+## 10. Additional Notes
 
 The reason we use **"--save-dev"** is so that the packages are added to our package.json file as **"devDependencies".**
 
