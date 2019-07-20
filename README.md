@@ -1,31 +1,32 @@
-# Setting up a new Node.js project in Gitbash using npm, Jest, Babel, and Parcel.
+# Setting up a new Node project in Git Bash using npm, Jest, Babel, and Parcel.
 (note: "npm" is the built-in Node.js package manager. You could use yarn instead, but the process will be slightly different.)
 
-## If you haven't already, install Node.js: "https://nodejs.org/en/"
+### If you haven't already, install Node.js: "https://nodejs.org/en/"
 
+<br>
 ## 1 Create a new repository on github, and name it whatever you like.
 When creating this repository, Add a ".gitignore" file using "Node" as the template.
 
-
+<br>
 ## 2 Clone the respository to your local system
 
-In Gitbash Enter: "git clone <insert your repository url here>"
+#### In Git Bash enter: "git clone <insert your repository url here>"
 
-
+<br>
 ## 3 Initialize your package.json file using npm
 
-In Gitbash Enter: "npm init"
+#### In Git Bash enter: "npm init"
 
 Run through the prompts and confirm the values you want.  Hit enter each time to keep the default if you're okay with it, or instead use "npm init -y" to accept all of the defaults, as you can always change them later in the package.json file if needed. Really, the only ones I'd bother to change are things like description and author.
 
-
+<br>
 ## 4 Install Jest
-In Gitbash Enter: "npm install --save-dev jest"
+#### In Git Bash enter: "npm install --save-dev jest"
 
-
+<br>
 ## 5 Install Babel (needed for using "imports" in tests)
 
-In Gitbash Enter: "npm install --save-dev babel-jest @babel/core @babel/preset-env"
+#### In Git Bash enter: "npm install --save-dev babel-jest @babel/core @babel/preset-env"
 
 Create a file in the project root (next to package.json) named "babel.config.js" and add the following lines (without the outer quotes):
 
@@ -42,14 +43,14 @@ Create a file in the project root (next to package.json) named "babel.config.js"
 	]
 };"
 
-
+<br>
 ## 6 Install Parcel
-In Gitbash Enter: "npm install --save-dev parcel-bundler"
+#### In Git Bash enter: "npm install --save-dev parcel-bundler"
 
-
+<br>
 ## 7 Modify .gitignore and package.json
 
-Open .gitignore
+#### Open .gitignore
 If you used github's built-in .gitignore file for Node projects you should already many lines such as "# Logs" and "# Runtime data".
 
 Add the following lines (without quotes):
@@ -65,7 +66,8 @@ If the "scripts": section isn't already present, add it, and include the followi
 	"dev": "parcel <your entry file>",
 	"build": "parcel build <your entry file>"
   }
-
+	
+<br>
 ### 7.1 Notes on directory structure
 
 For the "test" script, you can leave "<test directory>" blank and jest will simply search all directories for test files starting from the root.  However, for efficiency and organization's sake it probably makes the most sense to have a "test" directory in the root that contains your .test.js files.  Here is how I personally configure this section.
@@ -79,16 +81,16 @@ For the "test" script, you can leave "<test directory>" blank and jest will simp
 "./test" contains all test files
 "./src" contains all production code and resources. For instance, it will have sub-folders such as "/js", "/css", "/prototypes", "/images", and of course the "index.html" file. (See attached image for an example of a fully initialized "hello-world" project.)
 
-
+<br>
 ## 8 Notes on Running in Gitbash
 
-To run your jest tests use: "npm run test"
+#### To run your jest tests use: "npm run test"
 
-To run your website with parcel use: "npm run dev"
+#### To run your website with parcel use: "npm run dev"
 
-To terminate a running Jest or Parcel process in gitbash, hit CTRL + C.
+#### To terminate a running Jest or Parcel process in gitbash, hit CTRL + C.
 
-
+<br>
 ## 9 Additional Notes
 
 The reason we use "--save-dev" is so that the packages are added to our package.json file as "devDependencies".
