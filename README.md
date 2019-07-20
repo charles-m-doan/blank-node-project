@@ -127,6 +127,9 @@ For the "test" script, you can leave *test directory* blank and jest will simply
 ### That's it! You should be good to go.
 If you've followed the instructions to this point, a view of your project root and config files in VSCode should look similar to the following...
 
+![alt text](https://github.com/charles-m-doan/blank-node-project/blob/master/src/images/Example_01.jpg "Example 01")
+
+
 
 
 ## 9. Notes on Running in Gitbash
