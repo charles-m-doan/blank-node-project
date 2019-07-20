@@ -114,18 +114,20 @@ For the "test" script, you can leave *test directory* blank and jest will simply
 	}
 ```
 
-**"./test"** contains all test files
-**"./src"** contains all production code and resources. For instance, it will have sub-folders such as "/js", "/css", "/prototypes", "/images", and of course the "index.html" file. (See next section for an example.)
+**"./test"** contains all test files and **"./src"** contains all production code and resources. For instance, **/src** will have sub-folders such as "/js", "/css", "/prototypes", "/images", and of course the "index.html" file. (See next section for an example screenshot.)
 
 ## 8. Recommended Directory Structure and Files
 
 + Create a */src* folder in **root**
-+ Add an *index.html* file in **/src**
++ Add an *index.html* file to **/src**
 + Create a */js* folder in **/src**
-+ Add an *index.js* file in **/js**
++ Add an *index.js* file to **/js**
 + Create a */test* folder in **root**
 
 ### That's it! You should be good to go.
+If you've followed the instructions to this point, a view of your project root and config files in VSCode should look similar to the following...
+
+
 
 ## 9. Notes on Running in Gitbash
 
