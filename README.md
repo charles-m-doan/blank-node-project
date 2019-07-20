@@ -46,7 +46,7 @@ Run through the prompts and confirm the values you want.  Hit enter each time to
 npm install --save-dev jest
 ```
 
-## 5. Install Babel (needed for using "imports" in tests)
+## 5. Install Babel *(needed for using "import" in tests)*
 
 #### In Git Bash enter:
 
