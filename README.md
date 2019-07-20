@@ -6,7 +6,7 @@
 
 ## 1. Create a new repository on github, and name it whatever you like.
 + When creating this repository, Add a **".gitignore"** file using **"Node"** as the template.
-+ Copy the URL the from the newly created repository page.
++ Copy the URL from the newly created repository page.
 
 ## 2. Clone the respository to your local system
 
