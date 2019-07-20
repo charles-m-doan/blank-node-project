@@ -5,8 +5,8 @@
 
 
 ## 1. Create a new repository on github, and name it whatever you like.
-When creating this repository, Add a **".gitignore"** file using **"Node"** as the template.
-
++ When creating this repository, Add a **".gitignore"** file using **"Node"** as the template.
++ Copy the URL the from the newly created repository page.
 
 ## 2. Clone the respository to your local system
 
@@ -16,7 +16,19 @@ When creating this repository, Add a **".gitignore"** file using **"Node"** as t
 git clone <insert your repository url here>
 ```
 
+Ex:
+
+```
+git clone https://github.com/charles-m-doan/blank-node-project.git
+```
+
 ## 3. Initialize your package.json file using npm
+
+#### Enter the root directory of your newly cloned repository
+
+```
+cd <your-repository-name>
+```
 
 #### In Git Bash enter:
 
