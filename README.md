@@ -105,7 +105,7 @@ For the "test" script, you can leave *test directory* blank and jest will simply
 **"./test"** contains all test files
 **"./src"** contains all production code and resources. For instance, it will have sub-folders such as "/js", "/css", "/prototypes", "/images", and of course the "index.html" file. (See attached image for an example of a fully initialized "hello-world" project.)
 
-## 8 Notes on Running in Gitbash
+## 8. Notes on Running in Gitbash
 
 #### To run your jest tests use:
 ```
@@ -124,11 +124,12 @@ npm run dev
 CTRL + C.
 ```
 
-## 9 Additional Notes
+## 9. Additional Notes
 
 The reason we use **"--save-dev"** is so that the packages are added to our package.json file as **"devDependencies".**
 
-These packages aren't intended to be built in our production code.  Why not?  Jest is for testing production code, and parcel is for bundeling sever-side javascript (Node javascript) into client-side script. We don't want test code pushed with production code.  Simiarly, we don't want to include parcel code in the final production code because it's really just a developer tool used to circumvent the fact that browsers don't support server-side features like "import" statements. Server-side javascript features are dependent on Node.  Essentially we want to build our javascript using the nice organizational tools like imports that make object-oriented javascript programming much easier, but unfortunately browsers don't recognize these features. This is why we have two different scripts for parcel--"dev" and "build".  When we want to ship a parcel project we use "build" to bundle everything together into the "dist" folder using only client-side javascript that browsers understand. (I think. I'm still not 100% sure about how to actually deploy a parcel build.)
+#### Why?
+My understanding is that these packages aren't intended to be built in our production code. Jest is for testing production code, and Parcel is for bundeling sever-side javascript (Node) into client-side script. We don't want test code pushed with production code, and we don't want server-side code pushed in the final build for client-side. Parcel is really just a developer tool used to circumvent the fact that browsers don't support server-side features like "import" statements.  Essentially we want to build our javascript using the nice Node.js tools that make object-oriented javascript much easier, but unfortunately browsers don't recognize these features. This is why we have two different scripts for parcel--"dev" and "build".  When we want to ship a parcel project we'll use "build" to bundle everything together into a format that browsers can understand.
 
 ## Helpful References
 
